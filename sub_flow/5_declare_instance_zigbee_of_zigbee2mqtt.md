@@ -14,4 +14,27 @@
 
 <img src="../images/5_declare_instance_zigbee_of_zigbee2mqtt.png" width="550"/>
 
-### Step 1: abcd
+### Step 1: [Start State instance of zigbee2mqtt](5_1_start_state_instance_of_zigbee2mqtt.md)
+
+### Step 2: Get Zigbee2MQTT Version
+- Run `utils.getZigbee2MQTTVersion()`.
+- Get current version of zigbee2mqtt: `1.25.0`.
+
+### Step 3: [Start Zigbee instance of zigbee2mqtt](5_3_start_zigbee_instance_of_zigbee2mqtt.md)
+
+### Step 4: Add event listener onAdapterDisconnected(...)
+- Listen to event `adapterDisconnected`
+- 
+
+### Step 5: Create and log all devices from database
+
+### Step 6: Enable zigbee join if definded in zigbee2mqtt\data\configuration.yaml
+
+### Step 7: Try connect MQTT
+
+### Step 8: Start all extensions
+
+### Step 9: Send all cached states
+
+### Step 10: Add event listener for eventBus, listening event "lastSeenChanged"
+
