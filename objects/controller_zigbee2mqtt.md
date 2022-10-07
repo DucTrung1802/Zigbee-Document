@@ -18,13 +18,14 @@
 
 ### Methods
 
+---
+
 #### constructor()
 Input: `restartCallback: () => void, exitCallback: (code: number) => void`
 
 Output: `null`
 
-##### Flow
-
+---
 
 #### start()
 ```async start(): Promise<void>```
