@@ -1,7 +1,7 @@
 # Zigbee Document
 
 #### Legend
-<img src="Images/legend.png" alt="legend" width="550"/>
+<img src="Images/legend.png" width="550"/>
 
 ## Initialization
 
@@ -10,7 +10,7 @@
 
 ### Flow
 
-<img src="Images/zigbee2mqtt_index.js.png" alt="zigbee2mqtt_index.js" width="550"/>
+<img src="Images/zigbee2mqtt_index.js.png" width="550"/>
 
 ### Step 1: await checkDist()
 - Build zigbee2mqtt if it has not been built yet
