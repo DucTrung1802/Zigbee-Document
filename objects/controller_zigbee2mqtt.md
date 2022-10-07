@@ -17,9 +17,18 @@
 
 
 ## Methods
+- constructor()
+- start()
+- enableDisableExtension()
+- addExtension()
+- exit()
+- onZigbeeAdapterDisconnected()
+- publishEntityState()
+- iteratePayloadAttributeOutput()
+- callExtensions()
 
+## Detail
 ---
-
 ### constructor()
 - Input: `restartCallback: () => void, exitCallback: (code: number) => void`
 
@@ -30,9 +39,6 @@
 ![abcd]()
 
 #### Step 1: 
-
-
-
 
 ---
 
@@ -60,8 +66,8 @@
 ### iteratePayloadAttributeOutput()
 ```async iteratePayloadAttributeOutput(topicRoot: string, payload: KeyValue, options: MQTTOptions): Promise<void>```
 
-### sample()
-```abc```
+### callExtensions()
+```private async callExtensions(method: 'start' | 'stop', extensions: Extension[]): Promise<void>```
 
 
 
