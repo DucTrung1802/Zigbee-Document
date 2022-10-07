@@ -7,7 +7,7 @@
 
 ### Flow
 
-<img src="Images/zigbee2mqtt_index.js.png" alt="zigbee2mqtt_index.js" width="700"/>
+<img src="Images/zigbee2mqtt_index.js.png" alt="zigbee2mqtt_index.js" width="550"/>
 
 ### Step 1: [Declare instance Controller of zigbee2mqtt](1_declare_instance_controller_of_zigbee2mqtt.md)
 
