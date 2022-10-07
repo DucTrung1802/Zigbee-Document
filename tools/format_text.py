@@ -1,4 +1,4 @@
-text = "Declare instance Zigbee of zigbee2mqtt"
+text = "Start Controller of zigbee2mqtt"
 
 
 def toName(text):
