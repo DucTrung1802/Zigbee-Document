@@ -1,5 +1,8 @@
 # Zigbee Document
 
+#### Legend
+<img src="Images/legend.png" alt="legend" width="550"/>
+
 ## Initialization
 
 ### Path
