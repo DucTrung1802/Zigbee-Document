@@ -3,7 +3,7 @@
 ## External flow: [Zigbee Document - Step 4](../README.md#step-4-declare-instance-controller-of-zigbee2mqtt)
 
 ### Description
-- This is the flow of `constructor` method of [Controller of zigbee2mqtt](../objects/controller_zigbee2mqtt.md).
+- This is the flow of `constructor` method of Controller of zigbee2mqtt.
   
 #### Class [Controller (zigbee2mqtt)](../objects/controller_zigbee2mqtt.md)
 
