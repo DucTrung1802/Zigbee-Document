@@ -1,6 +1,6 @@
 # Zigbee Document
 
-#### Legend
+### Legend
 <img src="images/legend.png" width="550"/>
 
 ## Initialization
