@@ -9,7 +9,7 @@
 > zigbee2mqtt\index.js
 
 ### Flow
-<img src="images/zigbee2mqtt_index.js.png" width="550"/>
+<img src="images/README.js.png" width="550"/>
 
 ### Step 1: await checkDist()
 - Build zigbee2mqtt if it has not been built yet.
