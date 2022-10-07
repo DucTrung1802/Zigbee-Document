@@ -24,7 +24,7 @@
 
 ### Step 4: Add event listener onAdapterDisconnected(...)
 - Listen to event `adapterDisconnected`
-- 
+- Callback function: `this.onZigbeeAdapterDisconnected()` &rarr; `this.stop()`
 
 ### Step 5: Create and log all devices from database
 
