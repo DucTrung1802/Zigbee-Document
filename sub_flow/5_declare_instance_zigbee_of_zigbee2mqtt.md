@@ -22,9 +22,7 @@
 
 ### Step 3: [Start Zigbee instance of zigbee2mqtt](5_3_start_zigbee_instance_of_zigbee2mqtt.md)
 
-### Step 4: Add event listener onAdapterDisconnected(...)
-- Listen to event `adapterDisconnected`
-- Callback function: `this.onZigbeeAdapterDisconnected()` &rarr; `this.stop()`
+### Step 4: [Add event listener onAdapterDisconnected()](5_4_add_event_listener_onadapterdisconnected().md)
 
 ### Step 5: Create and log all devices from database
 
