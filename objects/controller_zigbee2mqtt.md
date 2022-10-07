@@ -20,6 +20,7 @@
 
 #### constructor()
 Input: `restartCallback: () => void, exitCallback: (code: number) => void`
+
 Output: `null`
 
 ##### Flow
