@@ -1,11 +1,11 @@
 # Declare instance Controller of zigbee2mqtt
 
+## External flow: [Zigbee Document - Step 4](../README.md#step-4-declare-instance-controller-of-zigbee2mqtt)
+
 ### Description
 - This is the flow of `constructor` method of [Controller of zigbee2mqtt](../objects/controller_zigbee2mqtt.md).
   
 #### Class [Controller (zigbee2mqtt)](../objects/controller_zigbee2mqtt.md)
-
-#### External flow: [Zigbee Document - Step 4](../README.md#step-4-declare-instance-controller-of-zigbee2mqtt)
 
 ### Path
 > zigbee2mqtt\lib\controller.ts
