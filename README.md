@@ -23,6 +23,6 @@
 
 ### Step 4: [Declare instance Controller of zigbee2mqtt](sub_flow/4_declare_instance_controller_of_zigbee2mqtt.md)
 
-### Step 5: [Start Controller of zigbee2mqtt]()
+### Step 5: [Start Controller of zigbee2mqtt](sub_flow/5_declare_instance_zigbee_of_zigbee2mqtt.md)
 
 ## Event loop
