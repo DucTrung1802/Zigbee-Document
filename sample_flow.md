@@ -3,7 +3,7 @@
 ## External flow: [ABCD - Step X](...)
 
 ### Description
-- This is the flow of `constructor` method of Controller of zigbee2mqtt.
+- This is the flow of `constructor()` method of Controller of zigbee2mqtt.
   
 #### Class [ABCD](...)
 

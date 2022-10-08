@@ -1,4 +1,4 @@
-text = "Add event listener onAdapterDisconnected()"
+text = "Start Controller of zigbee2mqtt"
 
 
 def toName(text):
