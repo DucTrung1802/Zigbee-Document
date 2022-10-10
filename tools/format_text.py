@@ -1,4 +1,4 @@
-text = "Start Controller of zigbee-herdsman"
+text = "Create and inject Adapter"
 
 
 def toName(text):

@@ -15,23 +15,26 @@
 <img src="../images/5_3_4_start_controller_of_zigbee-herdsman.js.png" width="550"/>
 
 ### Step 1: Create and inject Database
+- Current path of database: `zigbee2mqtt\data\database.db`
 
-### Step 2: SAMPLE
+Class [Database]()
 
-### Step 3: SAMPLE
+### Step 2: [Create and inject Adapter](5_3_4_2_create_and_inject_adapter.md)
 
-### Step 4: SAMPLE
+### Step 3: Start Adapter (ZStackAdapter)
 
-### Step 5: SAMPLE
+### Step 4: Declare instance GreenPower
 
-### Step 6: SAMPLE
+### Step 5: Add Event Listeners for Adapter
 
-### Step 7: SAMPLE
+### Step 6: Add coordinator to the database if it is not there yet
 
-### Step 8: SAMPLE
+### Step 7: Update coordinator ieeeAddr if changed, can happen due to e.g. reflashing
 
-### Step 9: SAMPLE
+### Step 8:  Set backup coordinator timer to 1 day (include save adapter information)
 
-### Step 10: SAMPLE
+### Step 9: Set database save timer to 1 hour
 
+### Step 10: Declare instance TouchLink
 
+### Step 11: return startResult
