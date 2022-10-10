@@ -1,4 +1,4 @@
-text = "Start Controller of zigbee2mqtt"
+text = "Set interval for saving data"
 
 
 def toName(text):
