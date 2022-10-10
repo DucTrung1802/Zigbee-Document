@@ -21,7 +21,7 @@ Class [Database]()
 
 ### Step 2: [Create and inject Adapter](5_3_4_2_create_and_inject_adapter.md)
 
-### Step 3: [Start Adapter (ZStackAdapter)]()
+### Step 3: [Start Adapter (ZStackAdapter)](5_3_4_3_start_adapter_(zstackadapter).md)
 
 ### Step 4: Declare instance GreenPower
 
