@@ -1,4 +1,4 @@
-text = "Set interval for saving data"
+text = "Start Controller of zigbee-herdsman"
 
 
 def toName(text):
