@@ -23,13 +23,16 @@
 
 ### Step 2: Declare an instance of Queue
 - Initialize this.jobs as an array
-- Initialize this.concurrent 
+- Initialize this.concurrent ()
 
 Class [Queue]()
 
 ### Step 3: Declare an instacne of Waitress
+Initialize parameters:
+- waiters
+- timeoutFormatter
+- validator
+- currentID
 
-### Step 4: Add event listener for this.znp ("received", ...)
-
-### Step 5: Add event listener for this.znp ("close", ...)
+Class [Waitress]()
 
