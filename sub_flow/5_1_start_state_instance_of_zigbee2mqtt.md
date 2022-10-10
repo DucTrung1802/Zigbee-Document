@@ -3,7 +3,7 @@
 ## External flow: [Start Controller of zigbee2mqtt - Step 1](5_start_controller_of_zigbee2mqtt.md)
 
 ### Description
-- This is the flow of `start()` method of Controller of zigbee2mqtt.  
+- This is the flow of `start()` method of Controller of `zigbee2mqtt`.  
 #### Class [State](...)
 
 ### Path

@@ -1,4 +1,4 @@
-text = "Create and inject Adapter"
+text = "Declare CLASS Znp of ZStackAdapter (ZNP = Zigbee Network Processor)"
 
 
 def toName(text):

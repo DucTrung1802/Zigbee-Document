@@ -3,7 +3,7 @@
 ## External flow: [Zigbee Document - Step 4](../README.md#step-4-declare-instance-controller-of-zigbee2mqtt)
 
 ### Description
-- This is the flow of `constructor()` method of Controller of zigbee2mqtt.
+- This is the flow of `constructor()` method of Controller of `zigbee2mqtt`.
   
 #### Class [Controller (zigbee2mqtt)](../objects/controller_zigbee2mqtt.md)
 
@@ -26,6 +26,10 @@
 #### Flow
 - Set max listeners is 100.
 - Add an event listener that listen event `error`. Callback function: `onError`
+
+`onError` function:
+- Log error
+- Log debug
 
 ### Step 2: Declare instance Zigbee of zigbee2mqtt
 - Initialize `eventBus` for Zigbee instance

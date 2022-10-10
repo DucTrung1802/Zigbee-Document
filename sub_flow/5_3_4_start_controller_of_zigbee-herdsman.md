@@ -3,7 +3,7 @@
 ## External flow: [Start Zigbee instance of zigbee2mqtt - Step 4](...)
 
 ### Description
-- This is the flow of `start()` method of Controller of zigbee-herdsman.
+- This is the flow of `start()` method of Controller of `zigbee-herdsman`.
   
 #### Class [Controller (zigbee-herdsman)](...)
 
