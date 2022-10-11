@@ -31,8 +31,6 @@ Class [GreenPower](...)
 - Event: `deviceJoined`
 - Callback function: `onDeviceJoinedGreenPower.bind(this)`
 
-READ: https://software-dl.ti.com/simplelink/esd/simplelink_cc13x2_26x2_sdk/3.40.00.02/exports/docs/zigbee/html/zigbee/z-stack-overview.html#green-power
-
 Class [GreenPower]()
 Method [onDeviceJoinedGreenPower()]()
 
@@ -67,7 +65,7 @@ Method [onDeviceJoinedGreenPower()]()
 - Remove all `devices` from database
 - Backup coordinator (adapter): [controller.backup()]() (zigbee-herdsman) &rarr; `adapter.backup()` (abstract class) &rarr; [zStackAdapter.backup()]() &rarr; **[AdapterBackup.createBackup()]()**
 
-### Step 8: [Add coordinator to the database if it is not there yet]()
+### Step 8: [Add coordinator to the database if it is not there yet](5_3_4_8_add_coordinator_to_the_database_if_it_is_not_there_yet.md)
 
 ### Step 9: Update coordinator ieeeAddr if changed, can happen due to e.g. reflashing
 

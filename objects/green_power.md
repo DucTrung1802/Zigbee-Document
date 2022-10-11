@@ -1,0 +1,1 @@
+READ: https://software-dl.ti.com/simplelink/esd/simplelink_cc13x2_26x2_sdk/3.40.00.02/exports/docs/zigbee/html/zigbee/z-stack-overview.html#green-power
