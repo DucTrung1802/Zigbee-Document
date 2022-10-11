@@ -1,22 +1,25 @@
-# this.znp.request(Subsystem.SYS, 'ping', ...)
+# this.znp.request(Subsystem.SYS, 'version', ...)
 
-## External flow: [Start Adapter (ZStackAdapter) - Step 2](5_3_4_3_start_adapter_(zstackadapter).md)
+## External flow: [Start Adapter (ZStackAdapter) - Step 3](5_3_4_3_start_adapter_(zstackadapter).md)
 
 ### Description
-- This is the `request()` method of Znp of zigbee-herdsman with a specific request as argument.
-- Syntax: `znp.request(Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', ...)`
-  
+- This is the `request()` method of Znp in zigbee-herdsman with a specific request as argument.
+
+#### Syntax: `znp.request(Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', <PAYLOAD>, ...)`
+
+#### Full request: `znp.request(Subsystem.SYS, 'ping', {capabilities: 1})`
+
 #### Class [Znp](...)
 
 ### Path
 > zigbee-herdsman\src\adapter\z-stack\znp\znp.ts
 
-### Request
-- **Name**: `SYS_PING` 
+### Reference
+- **Name**: `SYS_VERSION` 
 - **Type**: `SREQ`
-- **Description**: This command issues PING requests to verify if a device is active and check the capability of the device.
+- **Description**: This command is used to request for the device’s version string.
 - **Document**: [Z-Stack Monitor and Test API_2020](https://drive.google.com/file/d/1y9t4c9erLgI0HNlFCsCABP23IFJd_A_n/view?usp=sharing)
-- **Page**: 80/223
+- **Page**: 81/223
 
 ### Method
 [request()]() of Znp
