@@ -4,14 +4,17 @@
 
 ### Description
 - This is the `request()` method of Znp of zigbee-herdsman with a specific request as argument.
-- Syntax: `znp.request(Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', ...)`
-  
+
+#### Syntax: `znp.request(Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', <PAYLOAD>, ...)`
+
+#### Full request: `znp.request(Subsystem.SYS, 'ping', {capabilities: 1})`
+
 #### Class [Znp](...)
 
 ### Path
 > zigbee-herdsman\src\adapter\z-stack\znp\znp.ts
 
-### Request
+### Reference
 - **Name**: `SYS_PING` 
 - **Type**: `SREQ`
 - **Description**: This command issues PING requests to verify if a device is active and check the capability of the device.
