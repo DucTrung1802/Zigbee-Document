@@ -16,9 +16,9 @@
 
 ### Step 1: [Open Znp](5_3_4_3_1_open_znp.md)
 
-### Step 2: Try this.znp.request(Subsystem.SYS, 'ping', {capabilities: 1}) 3 times
+### Step 2: [Try this.znp.request(Subsystem.SYS, 'ping', ...) 3 times](5_3_4_3_2_try_this.znp.request(subsystem.sys%2C_'ping'%2C_...)_3_times.md)
 
-### Step 3: this.znp.request(Subsystem.SYS, 'version', {})
+### Step 3: this.znp.request(Subsystem.SYS, 'version', ...)
 
 ### Step 4: Detect concurrent of adapter
 

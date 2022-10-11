@@ -1,4 +1,4 @@
-text = "Start Adapter (ZStackAdapter)"
+text = "Try this.znp.request(Subsystem.SYS, 'ping', ...) 3 times"
 
 
 def toName(text):
