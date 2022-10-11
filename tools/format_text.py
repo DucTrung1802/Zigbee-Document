@@ -1,4 +1,4 @@
-text = "Try this.znp.request(Subsystem.SYS, 'ping', ...) 3 times"
+text = "this.znp.request(Subsystem.SYS, 'version', ...)"
 
 
 def toName(text):
