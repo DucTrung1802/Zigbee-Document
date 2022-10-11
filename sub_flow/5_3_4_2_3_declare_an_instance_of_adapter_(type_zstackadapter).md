@@ -38,7 +38,6 @@ Class [Waitress]()
 - Callback function: `this.onZnpRecieved.bind(this)`
 
 Class [ZStackAdapter]()
-
 Method [onZnpRecieved]()
 
 ### Step 5: Add event listener "close" for Znp
@@ -47,5 +46,4 @@ Method [onZnpRecieved]()
 - Callback function: `this.onZnpClose.bind(this)`
   
 Class [ZStackAdapter]()
-
 Method [onZnpClose]()

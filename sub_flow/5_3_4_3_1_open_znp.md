@@ -3,36 +3,36 @@
 ## External flow: [Start Adapter (ZStackAdapter) - Step 1](5_3_4_3_start_adapter_(zstackadapter).md#step-1-open-znp)
 
 ### Description
-- This is the flow of `start()` method of ZStackAdapter of zigbee-herdsman.
+- This is the flow of `open()` method of Znp of zigbee-herdsman.
 
-#### Class [ZStackAdapter](...)
+#### Class [Znp](...)
 
 ### Path
-> zigbee-herdsman\src\adapter\z-stack\adapter\zStackAdapter.ts
+> zigbee-herdsman\src\adapter\z-stack\znp\znp.ts
 
 ### Flow
 
-<img src="..." width="550"/>
+<img src="../images/5_3_4_3_1_open_znp.png" width="550"/>
 
-### Step 1: SAMPLE
+### Step 1: Detect port type
+- Determine port type: `Serial Port` | `Socket Port`
+- **For this system**, port type is `Serial Port`.
 
-### Step 2: SAMPLE
+### Step 2: openSerialPort()
+- Initialize an instance of `SerialPort` (defined in `node_modules`).
+- Initialize an instance of `UnpiWriter` (more detail in class [Writer]())
+- Attach a Writable stream to the readable stream so that it consequently switches into flowing mode and then pushes all the data that it has to the attached Writable ([readable.pipe()](https://www.geeksforgeeks.org/node-js-stream-readable-pipe-method/) method)
+- Add event listener for `unpiParser`:
+  - Event: `parsed`
+  - Callback function: `onUnpiParsed()`
 
-### Step 3: SAMPLE
+Class [Znp]()
+Method [openSerialPort()]()
+Method [onUnpiParsed()]()
 
-### Step 4: SAMPLE
+### Step 3: Return result of opening port
+- If the port is error:
+  - The port will be closed.
 
-### Step 5: SAMPLE
-
-### Step 6: SAMPLE
-
-### Step 7: SAMPLE
-
-### Step 8: SAMPLE
-
-### Step 9: SAMPLE
-
-### Step 10: SAMPLE
-
-### Step 11: SAMPLE
-
+- If the port is opened successfully:
+  - 
