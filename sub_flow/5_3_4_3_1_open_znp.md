@@ -35,4 +35,12 @@ Method [onUnpiParsed()]()
   - The port will be closed.
 
 - If the port is opened successfully:
-  - 
+  - Skip boot loader (Method [skipBootloader()]() of [Znp]())
+  - Add one-time event listener:
+    - Event: `close`
+    - Callback function: `onPortClose()`
+  - Add one-time event listener:
+    - Event: `error`
+    - Callback function: write debug log.
+
+Method [onPortClose()]()
