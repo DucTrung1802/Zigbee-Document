@@ -1,4 +1,4 @@
-text = "this.znp.request(Subsystem.SYS, 'version', ...)"
+text = "Add coordinator to the database if it is not there yet"
 
 
 def toName(text):

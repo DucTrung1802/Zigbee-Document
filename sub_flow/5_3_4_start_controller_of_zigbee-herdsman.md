@@ -12,7 +12,7 @@
 
 ### Flow
 
-<img src="../images/5_3_4_start_controller_of_zigbee-herdsman.js.png" width="550"/>
+<img src="../images/5_3_4_start_controller_of_zigbee-herdsman.png" width="550"/>
 
 ### Step 1: Create and inject Database
 - Current path of database: `zigbee2mqtt\data\database.db`
@@ -25,16 +25,56 @@ Class [Database]()
 
 ### Step 4: Declare instance GreenPower
 
-### Step 5: Add Event Listeners for Adapter
+Class [GreenPower](...)
 
-### Step 6: Add coordinator to the database if it is not there yet
+### Step 5: Add Event Listener for GreenPower
+- Event: `deviceJoined`
+- Callback function: `onDeviceJoinedGreenPower.bind(this)`
 
-### Step 7: Update coordinator ieeeAddr if changed, can happen due to e.g. reflashing
+READ: https://software-dl.ti.com/simplelink/esd/simplelink_cc13x2_26x2_sdk/3.40.00.02/exports/docs/zigbee/html/zigbee/z-stack-overview.html#green-power
 
-### Step 8:  Set backup coordinator timer to 1 day (include save adapter information)
+Class [GreenPower]()
+Method [onDeviceJoinedGreenPower()]()
 
-### Step 9: Set database save timer to 1 hour
+### Step 6: Add Event Listeners for Adapter
+#### 6.1 deviceJoined
+- Event: `deviceJoined`
+- Callback function: [onDeviceJoined.bind(this)]()
+#### 6.2 zclData
+- Event: `zclData`
+- Callback function: [onZclOrRawData('zcl', data)]()
+#### 6.3 rawData
+- Event: `rawData`
+- Callback function: [onZclOrRawData('raw', data)]()
+#### 6.4 disconnected
+- Event: `disconnected`
+- Callback function: [onAdapterDisconnected.bind(this)]()
+#### 6.5 deviceAnnounce
+- Event: `deviceAnnounce`
+- Callback function: [onDeviceAnnounce.bind(this)]()
+#### 6.6 deviceLeave
+- Event: `deviceLeave`
+- Callback function: [onDeviceLeave.bind(this)]()
+#### 6.7 networkAddress
+- Event: `networkAddress`
+- Callback function: [onNetworkAddress.bind(this)]()
 
-### Step 10: Declare instance TouchLink
+### Step 7: Handle `if` (startResult === 'reset')
+- Backup database (copy database file to backup database file)
+  - Database path: `zigbee2mqtt\data\database.db`
+  - Backup database path: `zigbee2mqtt\data\database.db.backup`
+- Remove all `groups` from database
+- Remove all `devices` from database
+- Backup coordinator (adapter): [controller.backup()]() (zigbee-herdsman) &rarr; `adapter.backup()` (abstract class) &rarr; [zStackAdapter.backup()]() &rarr; **[AdapterBackup.createBackup()]()**
 
-### Step 11: return startResult
+### Step 8: [Add coordinator to the database if it is not there yet]()
+
+### Step 9: Update coordinator ieeeAddr if changed, can happen due to e.g. reflashing
+
+### Step 10:  Set backup coordinator timer to 1 day (include save adapter information)
+
+### Step 11: Set database save timer to 1 hour
+
+### Step 12: Declare instance TouchLink
+
+### Step 13: return startResult
