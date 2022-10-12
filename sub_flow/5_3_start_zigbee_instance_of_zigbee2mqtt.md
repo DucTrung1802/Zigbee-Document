@@ -50,6 +50,43 @@ Class [Controller (zigbee-herdsman)]()
 Class [Controller (zigbee-herdsman)]()
 
 ### Step 5: Add event listener for this.herdsman
+#### 5.1 adapterDisconnected
+- Event: `adapterDisconnected`
+- Callback function: `eventBus.emitAdapterDisconnected()`
+
+#### 5.2 lastSeenChanged
+- Event: `lastSeenChanged`
+- Callback function: `eventBus.emitLastSeenChanged(...)`
+
+#### 5.3 permitJoinChanged
+- Event: `permitJoinChanged`
+- Callback function: `eventBus.emitPermitJoinChanged(data)`
+
+#### 5.4 deviceNetworkAddressChanged
+- Event: `deviceNetworkAddressChanged`
+- Callback function: `eventBus.emitDeviceNetworkAddressChanged({device})`
+
+#### 5.5 deviceAnnounce
+- Event: `deviceAnnounce`
+- Callback function: `eventBus.emitDeviceAnnounce({device})`
+
+#### 5.7 deviceInterview
+- Event: `deviceInterview`
+- Callback function: `eventBus.emitDeviceInterview({device, status: data.status})`
+
+#### 5.8 deviceJoined
+- Event: `deviceJoined`
+- Callback function: `eventBus.emitDeviceJoined({device})`
+
+#### 5.9 deviceLeave
+- Event: `deviceLeave`
+- Callback function: `eventBus.emitDeviceLeave({ieeeAddr: data.ieeeAddr, name})`
+
+#### 5.10 message
+- Event: `message`
+- Callback function:
+  - `if` (device.zh.type === 'Coordinator') &rarr; return
+  - `else`: `eventBus.emitDeviceMessage({...data, device})`
 
 ### Step 6: Handle passlist and blocklist
 
