@@ -1,4 +1,4 @@
-# this.znp.request(Subsystem.SYS, 'version', ...)
+# znp.request(Subsystem.SYS, 'version', ...)
 
 ## External flow: [Start Adapter (ZStackAdapter) - Step 3](5_3_4_3_start_adapter_(zstackadapter).md)
 
