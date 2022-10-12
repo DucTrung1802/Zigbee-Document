@@ -7,7 +7,7 @@
 
 #### Syntax: `znp.request(Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', <PAYLOAD>, ...)`
 
-#### Full request: `znp.request(Subsystem.SYS, 'ping', {capabilities: 1})`
+#### Specific syntax: `znp.request(Subsystem.SYS, 'ping', {capabilities: 1})`
 
 #### Class [Znp](...)
 

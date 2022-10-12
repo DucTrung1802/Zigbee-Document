@@ -23,11 +23,9 @@
 - If `interpanLock` value is `True`, an Error will be thrown: `Cannot execute command, in Inter-PAN mode`
 - [Inter-PAN mode](https://www.google.com.vn/)
 
-### Step 2: znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'activeEpRsp', ...)
-- Create a [Waitress]() that [waitFor]() 
+### Step 2: [znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'activeEpRsp', ...)](5_3_4_8_2_znp.waitfor(...type.areq%2C_subsystem.zdo%2C_'activeeprsp'%2C_...).md)
 
-
-### Step 3: znp.request(Subsystem.ZDO, 'activeEpReq', ...)
+### Step 3: [znp.request(Subsystem.ZDO, 'activeEpReq', ...)](5_3_4_8_3_znp.request(subsystem.zdo%2C_'activeepreq'%2C_...).md)
 
 ### Step 4: activeEpRsp.start().promise
 
