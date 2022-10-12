@@ -26,9 +26,15 @@
 
 ### Step 5: Create and log all devices from database
 
-### Step 6: Enable zigbee join if definded in zigbee2mqtt\data\configuration.yaml
+Class [Zigbee]()
+Method [devices()]()
 
-### Step 7: Try connect MQTT
+### Step 6: [Enable zigbee join if definded in zigbee2mqtt\data\configuration.yaml]
+- if `permit_join` in `zigbee2mqtt\data\configuration.yaml` is set to `True` &rarr; Run [zigbee.permitJoin(True)]()
+
+### Step 7: [Try connect MQTT]()
+
+
 
 ### Step 8: Start all extensions
 

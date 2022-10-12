@@ -1,4 +1,4 @@
-text = "znp.request(Subsystem.ZDO, 'simpleDescReq', ...)"
+text = "Try connect MQTT"
 
 
 def toName(text):
