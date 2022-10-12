@@ -55,86 +55,86 @@ Method [waitFor]()
 - ID: 1
   - deviceID: 5
   - profileID: 260
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 2
   - deviceID: 5
   - profileID: 257
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 3
   - deviceID: 5
   - profileID: 260
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 4
   - deviceID: 5
   - profileID: 263
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 5
   - deviceID: 5
   - profileID: 264
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 6
   - deviceID: 5
   - profileID: 265
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 8
   - deviceID: 5
   - profileID: 260
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 10
   - deviceID: 5
   - profileID: 260
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 11
   - deviceID: 1024
   - profileID: 260
-  - inputClusters: [1281, 10]
-  - outputCluster: [1280, 1282]
+  - inputClusters: [ 1281, 10 ]
+  - outputCluster: [ 1280, 1282 ]
 
 - ID: 12
   - deviceID: 5
   - profileID: 49246
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 13
   - deviceID: 5
   - profileID: 260
-  - inputClusters: [25, ]
-  - outputCluster: []
+  - inputClusters: [ 25 ]
+  - outputCluster: [ ]
 
 - ID: 47
   - deviceID: 5
   - profileID: 260
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 110
   - deviceID: 5
   - profileID: 260
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 - ID: 242
   - deviceID: 5
   - profileID: 41440
-  - inputClusters: []
-  - outputCluster: []
+  - inputClusters: [ ]
+  - outputCluster: [ ]
 
 
 ### Method [queue.execute()](...)
