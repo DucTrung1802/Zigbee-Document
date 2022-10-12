@@ -5,7 +5,7 @@
 ### Description
 - This is the `waitFor()` method of Znp in zigbee-herdsman with a specific command as argument.
 
-#### Syntax: `znp.waitFor(<COMMAND_TYPE>, Subsystem.<TYPE_OF_SUBSYSTEM>, 'activeEpRsp', ...)`
+#### Syntax: `znp.waitFor(<COMMAND_TYPE>, Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', ...)`
 
 #### Specific syntax: `znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'activeEpRsp', ...)`
 

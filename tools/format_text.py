@@ -1,4 +1,4 @@
-text = "znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'simpleDescRsp', ...)"
+text = "znp.request(Subsystem.ZDO, 'simpleDescReq', ...)"
 
 
 def toName(text):

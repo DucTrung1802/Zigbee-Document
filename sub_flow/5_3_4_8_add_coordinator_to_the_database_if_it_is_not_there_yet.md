@@ -41,7 +41,7 @@ Method [waitFor]()
 
 #### 6.1 [znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'simpleDescRsp', ...)](5_3_4_8_6_1_znp.waitfor(...type.areq%2C_subsystem.zdo%2C_'simpledescrsp'%2C_...).md)
 
-#### 6.2 znp.request(Subsystem.ZDO, 'simpleDescReq', ...)
+#### 6.2 [znp.request(Subsystem.ZDO, 'simpleDescReq', ...)](5_3_4_8_6_2_znp.request(subsystem.zdo,_'simpledescreq',_...).md)
 
 #### 6.3 simpleDescRsp.start().promise
 - Get ID of the `simpleDescRsp` waiter
