@@ -67,7 +67,7 @@ Method [onDeviceJoinedGreenPower()]()
 
 ### Step 8: [Add coordinator to the database if it is not there yet](5_3_4_8_add_coordinator_to_the_database_if_it_is_not_there_yet.md)
 
-### Step 9: Update coordinator ieeeAddr if changed, can happen due to e.g. reflashing
+### Step 9: Update coordinator ieeeAddr if changed
 
 ### Step 10:  Set backup coordinator timer to 1 day (include save adapter information)
 
