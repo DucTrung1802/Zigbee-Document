@@ -97,8 +97,11 @@ Class [Controller (zigbee-herdsman)]()
   - if device is not included in `passlist`, it will be removed.
 - else if a device is in `blocklist`, it will be removed.
 
-
 ### Step 7: Check if we have to set a transmit power
+- if `settings.get().advanced.hasOwnProperty('transmit_power')`
+  - Run [herdsman.setTransmitPower(transmitPower)]()
+
+- Current `transmitPower`: `20 dbm`
 
 
 
