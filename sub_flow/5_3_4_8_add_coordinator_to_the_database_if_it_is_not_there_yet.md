@@ -39,12 +39,17 @@ Method [waitFor]()
 
 ### Step 6: For each active endpoint of Coordinator
 
-#### 6.1 znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'simpleDescRsp', ...)
+#### 6.1 [znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'simpleDescRsp', ...)](5_3_4_8_6_1_znp.waitfor(...type.areq%2C_subsystem.zdo%2C_'simpledescrsp'%2C_...).md)
 
 #### 6.2 znp.request(Subsystem.ZDO, 'simpleDescReq', ...)
 
 #### 6.3 simpleDescRsp.start().promise
+- Get ID of the `simpleDescRsp` waiter
+- Set timeout for the `simpleDescRsp` waiter: [timeouts.default](znp) = 10 seconds 
+- Start timer
 
+Class [Waitress]()
+Method [waitFor]()
 #### 6.4 Push endpoint information of Coordinator
 
 

@@ -1,4 +1,4 @@
-text = "znp.request(Subsystem.UTIL, 'getDeviceInfo', ...)"
+text = "znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'simpleDescRsp', ...)"
 
 
 def toName(text):
