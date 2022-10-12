@@ -13,18 +13,19 @@
 ### Path
 > zigbee-herdsman\src\adapter\z-stack\adapter\zStackAdapter.ts
 
-### Job (`<FUNCTION>`)
+## Job (`<FUNCTION>`)
 
-#### Flow
+### Flow
 
 <img src="../images/5_3_4_8_add_coordinator_to_the_database_if_it_is_not_there_yet.png" width="550"/>
 
-#### Steps
-
 ### Step 1: checkInterpanLock()
-
+- If `interpanLock` value is `True`, an Error will be thrown: `Cannot execute command, in Inter-PAN mode`
+- [Inter-PAN mode](https://www.google.com.vn/)
 
 ### Step 2: znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'activeEpRsp', ...)
+- Create a [Waitress]() that [waitFor]() 
+
 
 ### Step 3: znp.request(Subsystem.ZDO, 'activeEpReq', ...)
 
