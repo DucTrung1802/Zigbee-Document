@@ -68,11 +68,14 @@ Method [onDeviceJoinedGreenPower()]()
 ### Step 8: [Add coordinator to the database if it is not there yet](5_3_4_8_add_coordinator_to_the_database_if_it_is_not_there_yet.md)
 
 ### Step 9: Update coordinator ieeeAddr if changed
+- Can happen due to e.g. reflashing
 
 ### Step 10:  Set backup coordinator timer to 1 day (include save adapter information)
+- Run [controller.backup()]() after an interval of time: `1 day`
 
 ### Step 11: Set database save timer to 1 hour
+- Run [controller.databaseSave()]() after an interval of time: `1 hour`
 
-### Step 12: Declare instance TouchLink
+### Step 12: Declare instance Touchlink
 
-### Step 13: return startResult
+Class [Touchlink]()

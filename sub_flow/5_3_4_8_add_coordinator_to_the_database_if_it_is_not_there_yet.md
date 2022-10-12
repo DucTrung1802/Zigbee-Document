@@ -136,5 +136,7 @@ Method [waitFor]()
   - inputClusters: [ ]
   - outputCluster: [ ]
 
+### If there is `No coordinator in database`:
+- Run [Device.create("Coordinator",...)]()
 
 ### Method [queue.execute()](...)
