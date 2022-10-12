@@ -3,7 +3,7 @@
 ## External flow: [Add coordinator to the database if it is not there yet - Step 2](5_3_4_8_add_coordinator_to_the_database_if_it_is_not_there_yet.md#step-2-znpwaitfortypeareq-subsystemzdo-activeeprsp)
 
 ### Description
-- This is the `waitFor()` method of Znp in zigbee-herdsman with a specific request as argument.
+- This is the `waitFor()` method of Znp in zigbee-herdsman with a specific command as argument.
 
 #### Syntax: `znp.waitFor(<COMMAND_TYPE>, Subsystem.<TYPE_OF_SUBSYSTEM>, 'activeEpRsp', ...)`
 

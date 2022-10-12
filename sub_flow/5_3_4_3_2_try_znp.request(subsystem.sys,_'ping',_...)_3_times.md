@@ -3,7 +3,7 @@
 ## External flow: [Start Adapter (ZStackAdapter) - Step 2](5_3_4_3_start_adapter_(zstackadapter).md)
 
 ### Description
-- This is the `request()` method of Znp of zigbee-herdsman with a specific request as argument.
+- This is the `request()` method of Znp of zigbee-herdsman with a specific command as argument.
 
 #### Syntax: `znp.request(Subsystem.<TYPE_OF_SUBSYSTEM>, '<COMMAND>', <PAYLOAD>, ...)`
 
