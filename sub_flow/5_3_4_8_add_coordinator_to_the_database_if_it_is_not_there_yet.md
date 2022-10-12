@@ -10,8 +10,6 @@
 
 #### Class [ZStackAdapter](...)
 
-#### Method [queue.execute()](...)
-
 ### Path
 > zigbee-herdsman\src\adapter\z-stack\adapter\zStackAdapter.ts
 
@@ -19,6 +17,30 @@
 
 #### Flow
 
-<img src="..." width="550"/>
+<img src="../images/5_3_4_8_add_coordinator_to_the_database_if_it_is_not_there_yet.png" width="550"/>
 
 #### Steps
+
+### Step 1: checkInterpanLock()
+
+
+### Step 2: znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'activeEpRsp', ...)
+
+### Step 3: znp.request(Subsystem.ZDO, 'activeEpReq', ...)
+
+### Step 4: activeEpRsp.start().promise
+
+### Step 5: znp.request(Subsystem.UTIL, 'getDeviceInfo', ...)
+
+### Step 6: For each active endpoint of Coordinator
+
+#### 6.1 znp.waitFor(...Type.AREQ, Subsystem.ZDO, 'simpleDescRsp', ...)
+
+#### 6.2 znp.request(Subsystem.ZDO, 'simpleDescReq', ...)
+
+#### 6.3 simpleDescRsp.start().promise
+
+#### 6.4 Push endpoint information of Coordinator
+
+
+### Method [queue.execute()](...)
