@@ -89,6 +89,14 @@ Class [Controller (zigbee-herdsman)]()
   - `else`: `eventBus.emitDeviceMessage({...data, device})`
 
 ### Step 6: Handle passlist and blocklist
+- Get `passlist`: [settings.get().passlist]()
+- Get `blocklist`: [settings.get().blocklist]()
+
+#### `FOR EACH DEVICE`
+- if `passlist.length > 0`
+  - if device is not included in `passlist`, it will be removed.
+- else if a device is in `blocklist`, it will be removed.
+
 
 ### Step 7: Check if we have to set a transmit power
 
