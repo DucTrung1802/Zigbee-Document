@@ -28,8 +28,14 @@
 ### Step 3: [znp.request(Subsystem.ZDO, 'activeEpReq', ...)](5_3_4_8_3_znp.request(subsystem.zdo%2C_'activeepreq'%2C_...).md)
 
 ### Step 4: activeEpRsp.start().promise
+- Get ID of the `activeEpRsp` waiter
+- Set timeout for the `activeEpRsp` waiter: [timeouts.default](znp) = 10 seconds 
+- Start timer
 
-### Step 5: znp.request(Subsystem.UTIL, 'getDeviceInfo', ...)
+Class [Waitress]()
+Method [waitFor]()
+
+### Step 5: [znp.request(Subsystem.UTIL, 'getDeviceInfo', ...)](5_3_4_8_5_znp.request(Subsystem.UTIL%2C%20'getDeviceInfo'%2C%20...).md)
 
 ### Step 6: For each active endpoint of Coordinator
 

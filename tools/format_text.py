@@ -1,4 +1,4 @@
-text = "znp.request(Subsystem.ZDO, 'activeEpReq', ...)"
+text = "znp.request(Subsystem.UTIL, 'getDeviceInfo', ...)"
 
 
 def toName(text):
