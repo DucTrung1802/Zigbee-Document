@@ -8,31 +8,36 @@
 #### Class [Extension]()
 
 ### Path
-> zigbee2mqtt\lib\extension\extension.ts
+> zigbee2mqtt\lib\controller.ts
 
-### Flow
+Start all extensions including:
 
-<img src="..." width="550"/>
+### 1: [Bridge.start()]()
 
-### Step 1: SAMPLE
+### 2: Publish
 
-### Step 2: SAMPLE
+### 3: Receive
 
-### Step 3: SAMPLE
+### 4: Configure
 
-### Step 4: SAMPLE
+### 5: NetworkMap
 
-### Step 5: SAMPLE
+### 6: Groups
 
-### Step 6: SAMPLE
+### 7: Bind
 
-### Step 7: SAMPLE
+### 8: OnEvent
 
-### Step 8: SAMPLE
+### 9: OTAUpdate
 
-### Step 9: SAMPLE
+### 10: ExternalExtension
 
-### Step 10: SAMPLE
+### 11: Availability
 
-### Step 11: SAMPLE
+### 12: Frontend
+
+### 13: HomeAssistant
+
+
+
 
