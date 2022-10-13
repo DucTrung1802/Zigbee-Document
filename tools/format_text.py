@@ -1,4 +1,4 @@
-text = "Bridge.start()"
+text = "Bridge.Publish()"
 
 
 def toName(text):

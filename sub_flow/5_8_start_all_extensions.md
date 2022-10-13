@@ -14,9 +14,18 @@ Start all extensions including:
 
 ### Step 1: [Bridge.start()](5_8_1_bridge.start().md)
 
-### Step 2: Publish
+### Step 2: Publish.start()
+- Add event listener [eventBus.onMQTTMessage()]()
+  - Event: `mqttMessage`
+  - Callback function: [Publish.onMQTTMessage()]()
 
-### Step 3: Receive
+### Step 3: Receive.start()
+- Add event listener `eventBus.onPublishEntityState`
+  - Event: `publishEntityState`
+  - Callback function: [Receive.onPublishEntityState()]()
+- Add event listener `eventBus.onDeviceMessage`
+  - Event: `onDeviceMessage`
+  - Callback function: [Receive.onDeviceMessage()]()
 
 ### Step 4: Configure
 
