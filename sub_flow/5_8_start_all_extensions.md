@@ -12,31 +12,31 @@
 
 Start all extensions including:
 
-### 1: [Bridge.start()]()
+### Step 1: [Bridge.start()](5_8_1_bridge.start().md)
 
-### 2: Publish
+### Step 2: Publish
 
-### 3: Receive
+### Step 3: Receive
 
-### 4: Configure
+### Step 4: Configure
 
-### 5: NetworkMap
+### Step 5: NetworkMap
 
-### 6: Groups
+### Step 6: Groups
 
-### 7: Bind
+### Step 7: Bind
 
-### 8: OnEvent
+### Step 8: OnEvent
 
-### 9: OTAUpdate
+### Step 9: OTAUpdate
 
-### 10: ExternalExtension
+### Step 10: ExternalExtension
 
-### 11: Availability
+### Step 11: Availability
 
-### 12: Frontend
+### Step 12: Frontend
 
-### 13: HomeAssistant
+### Step 13: HomeAssistant
 
 
 

@@ -1,4 +1,4 @@
-text = "Start all extensions"
+text = "Bridge.start()"
 
 
 def toName(text):
