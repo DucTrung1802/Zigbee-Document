@@ -138,9 +138,16 @@
 
 ### Step 6: publishInfo()
 
+Method [publishInfo()]()
+
 ### Step 7: publishDevices()
+
+Method [publishDevices()]()
 
 ### Step 8: publishGroups()
 
-### Step 9: Add event listener for eventBus, listen to event "mqttMessage"
+Method [publishGroups()]()
 
+### Step 9: Add event listener for eventBus, listen to event "mqttMessage"
+- Event: `mqttMessage`
+- Callback function: [onMQTTMessage()]()
