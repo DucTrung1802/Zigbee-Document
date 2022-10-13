@@ -22,7 +22,11 @@
 
 ### Step 3: [Start Zigbee instance of zigbee2mqtt](5_3_start_zigbee_instance_of_zigbee2mqtt.md)
 
-### Step 4: [Add event listener onAdapterDisconnected()](5_4_add_event_listener_onadapterdisconnected().md)
+### Step 4: Add event listener onAdapterDisconnected()
+- Event: `adapterDisconnected`
+- Callback function: `onZigbeeAdapterDisconnected()`
+  - Log error
+  - Run [stop()]()
 
 ### Step 5: Create and log all devices from database
 
@@ -34,9 +38,7 @@ Method [devices()]()
 
 ### Step 7: [Try connect MQTT](5_7_try_connect_mqtt.md)
 
-
-
-### Step 8: Start all extensions
+### Step 8: [Start all extensions](5_8_start_all_extensions.md)
 
 ### Step 9: Send all cached states
 

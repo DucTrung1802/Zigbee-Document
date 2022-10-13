@@ -1,4 +1,4 @@
-text = "Try connect MQTT"
+text = "Start all extensions"
 
 
 def toName(text):
