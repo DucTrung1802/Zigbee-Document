@@ -28,6 +28,15 @@ Start all extensions including:
   - Callback function: [Receive.onDeviceMessage()]()
 
 ### Step 4: Configure
+#### 4.1 Configure devices
+- For each device in database:
+  - Run [configure(..., 'started')]()
+#### 4.2 Add event listener for eventBus
+- Event: `deviceJoined`
+- Callback function: 
+  - If `meta` field device has property `configured`, delete it.
+  - Run [configure(..., 'zigbee_event')]()
+#### 4.3 Add event 
 
 ### Step 5: NetworkMap
 
