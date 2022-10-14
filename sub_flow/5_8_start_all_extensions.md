@@ -174,10 +174,29 @@ Start all extensions including:
 
 ### Step 10: ExternalExtension.start()
 
+#### Path
+> zigbee2mqtt\lib\extension\externalExtension.ts
 
+#### 10.1 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [ExternalExtension.onMQTTMessage()]()
 
+#### 10.2 Define requests
+- `save`: [ExternalExtension.saveExtension()]()
+- `remove`: [ExternalExtension.removeExtension()]()
+
+#### 10.3 Load `user-defined` extensions
+
+Method [ExternalExtension.loadUserDefinedExtensions()]()
+
+#### 10.4 Publish `user-defined` extensions
+
+Method [ExternalExtension.publishExtensions()]()
 
 ### Step 11: Availability.start()
+
+
+
 
 ### Step 12: Frontend.start()
 
