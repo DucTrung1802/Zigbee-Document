@@ -195,6 +195,11 @@ Method [ExternalExtension.publishExtensions()]()
 
 ### Step 11: Availability.start()
 
+#### Path
+> zigbee2mqtt\lib\extension\availability.ts
+
+
+
 
 
 
