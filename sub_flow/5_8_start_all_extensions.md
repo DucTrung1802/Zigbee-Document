@@ -14,33 +14,89 @@ Start all extensions including:
 
 ### Step 1: [Bridge.start()](5_8_1_bridge.start().md)
 
+#### Path
+> zigbee2mqtt\lib\extension\bridge.ts
+
 ### Step 2: Publish.start()
-- Add event listener [eventBus.onMQTTMessage()]()
+
+#### Path
+> zigbee2mqtt\lib\extension\publish.ts
+
+- Add event listener `eventBus.onMQTTMessage()`
   - Event: `mqttMessage`
   - Callback function: [Publish.onMQTTMessage()]()
 
 ### Step 3: Receive.start()
-- Add event listener `eventBus.onPublishEntityState`
+
+#### Path
+> zigbee2mqtt\lib\extension\receive.ts
+
+- Add event listener `eventBus.onPublishEntityState()`
   - Event: `publishEntityState`
   - Callback function: [Receive.onPublishEntityState()]()
-- Add event listener `eventBus.onDeviceMessage`
+- Add event listener `eventBus.onDeviceMessage()`
   - Event: `onDeviceMessage`
   - Callback function: [Receive.onDeviceMessage()]()
 
-### Step 4: Configure
+### Step 4: Configure.start()
+
+#### Path
+> zigbee2mqtt\lib\extension\configure.ts
+
 #### 4.1 Configure devices
 - For each device in database:
-  - Run [configure(..., 'started')]()
-#### 4.2 Add event listener for eventBus
+  - Run [Configure.configure(..., 'started')]()
+  
+#### 4.2 Add event listener `eventBus.onDeviceJoined()`
 - Event: `deviceJoined`
 - Callback function: 
   - If `meta` field device has property `configured`, delete it.
-  - Run [configure(..., 'zigbee_event')]()
-#### 4.3 Add event 
+  - Run [Configure.configure(..., 'zigbee_event')]()
+  
+#### 4.3 Add event listener `eventBus.onDeviceInterview()`
+- Event: `deviceInterview`
+- Callback function: [Configure.configure(..., 'zigbee_event')]()
+  
+#### 4.4 Add event listener `eventBus.onLastSeenChanged()`
+- Event: `lastSeenChanged`
+- Callback function: [Configure.configure(..., 'zigbee_event')]()
+
+#### 4.5 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [Configure.onMQTTMessage()]()
+
+#### 4.6 Add event listener `eventBus.onReconfigure()`
+- Event: `reconfigure`
+- Callback function: [Configure.onReconfigure()]()
 
 ### Step 5: NetworkMap
 
+#### Path
+> zigbee2mqtt\lib\extension\networkMap.ts
+
+#### 5.1 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [NetworkMap.onMQTTMessage()]()
+  
+#### 5.2 Define supported format
+  - `raw`: [NetworkMap.raw()]()
+  - `graphviz`: [NetworkMap.graphviz()]()
+  - `plantuml`: [NetworkMap.plantuml()]()
+
 ### Step 6: Groups
+
+#### Path
+> zigbee2mqtt\lib\extension\groups.ts
+
+#### 6.1 Add event listener `eventBus.onStateChange()`
+- Event: `stateChange`
+- Callback function: [Groups.onStateChange()]()
+
+#### 6.2 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [Groups.onMQTTMessage()]()
+
+#### 6.3 Run [Groups.syncGroupsWithSettings()]()
 
 ### Step 7: Bind
 
