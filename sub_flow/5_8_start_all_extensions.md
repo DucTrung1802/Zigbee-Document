@@ -45,7 +45,8 @@ Start all extensions including:
 
 #### 4.1 Configure devices
 - For each device in database:
-  - Run [Configure.configure(..., 'started')]()
+  - 
+  - If device has `configure()` method, run [Configure.configure(..., 'started')]()
   
 #### 4.2 Add event listener `eventBus.onDeviceJoined()`
 - Event: `deviceJoined`
@@ -69,7 +70,7 @@ Start all extensions including:
 - Event: `reconfigure`
 - Callback function: [Configure.onReconfigure()]()
 
-### Step 5: NetworkMap
+### Step 5: NetworkMap.start()
 
 #### Path
 > zigbee2mqtt\lib\extension\networkMap.ts
@@ -83,7 +84,7 @@ Start all extensions including:
   - `graphviz`: [NetworkMap.graphviz()]()
   - `plantuml`: [NetworkMap.plantuml()]()
 
-### Step 6: Groups
+### Step 6: Groups.start()
 
 #### Path
 > zigbee2mqtt\lib\extension\groups.ts
@@ -98,19 +99,89 @@ Start all extensions including:
 
 #### 6.3 Run [Groups.syncGroupsWithSettings()]()
 
-### Step 7: Bind
+### Step 7: Bind.start()
 
-### Step 8: OnEvent
+#### 7.1 Add event listener `eventBus.onDeviceMessage()`
+- Event: `deviceMessage`
+- Callback function: [Bind.poll()]()
 
-### Step 9: OTAUpdate
+#### 7.2 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [Bind.onMQTTMessage()]()
 
-### Step 10: ExternalExtension
+#### 7.3 Add event listener `eventBus.onGroupMembersChanged()`
+- Event: `groupMembersChanged`
+- Callback function: [Bind.onGroupMembersChanged()]()
 
-### Step 11: Availability
+### Step 8: OnEvent.start()
 
-### Step 12: Frontend
+#### Path
+> zigbee2mqtt\lib\extension\onEvent.ts
 
-### Step 13: HomeAssistant
+#### Description
+- This extension calls the zigbee-herdsman-converters onEvent.
+
+#### 8.1 Call `onEvent` of each devices
+- For each device in database:
+  - If device has `onEvent()` method, run [OnEvent.callOnEvent(device, 'start', {})]()
+
+#### 8.2 Add event listener `eventBus.onDeviceMessage()`
+- Event: `deviceMessage`
+- Callback function: [OnEvent.callOnEvent(..., "message", ...)]()
+
+#### 8.3 Add event listener `eventBus.onDeviceJoined()`
+- Event: `deviceJoined`
+- Callback function: [OnEvent.callOnEvent(..., "deviceJoined", ...)]()
+
+#### 8.4 Add event listener `eventBus.onDeviceInterview()`
+- Event: `deviceInterview`
+- Callback function: [OnEvent.callOnEvent(..., "deviceInterview", ...)]()
+
+#### 8.5 Add event listener `eventBus.onDeviceAnnounce()`
+- Event: `deviceAnnounce`
+- Callback function: [OnEvent.callOnEvent(..., "deviceAnnounce", ...)]()
+
+#### 8.6 Add event listener `eventBus.onDeviceNetworkAddressChanged()`
+- Event: `deviceNetworkAddressChanged`
+- Callback function: [OnEvent.callOnEvent(..., "deviceNetworkAddressChanged", ...)]()
+
+#### 8.7 Add event listener `eventBus.onEntityOptionsChanged()`
+- Event: `deviceOptionsChanged`
+- Callback function: 
+  - [OnEvent.callOnEvent(..., "deviceOptionsChanged", ...)]()
+  - If `OnEvent.callOnEvent(..., "deviceOptionsChanged", ...)` runs successfully, eventBus emits event `devicesChanged` through `eventBus.emitDevicesChanged()`.
+
+### Step 9: OTAUpdate.start()
+
+#### Path
+> zigbee2mqtt\lib\extension\otaUpdate.ts
+
+#### 9.1 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [OTAUpdate.onMQTTMessage()]()
+
+#### 9.2 Add event listener `eventBus.onDeviceMessage()`
+- Event: `deviceMessage`
+- Callback function: [OTAUpdate.onZigbeeEvent()]()
+
+#### 9.3 Check if `Ikea` device using test URL
+
+#### 9.4 Let zigbeeOTA module know if the override index file is provided
+
+#### 9.5 In order to support local firmware files we need to let zigbeeOTA know where the data directory is
+
+#### 9.6 In case Zigbee2MQTT is restared during an update, remove progress and remaining values from state.
+
+### Step 10: ExternalExtension.start()
+
+
+
+
+### Step 11: Availability.start()
+
+### Step 12: Frontend.start()
+
+### Step 13: HomeAssistant.start()
 
 
 
