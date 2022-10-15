@@ -297,14 +297,21 @@ Class [WebSocket]()
 - Event: `deviceInterview`
 - Callback function: [HomeAssistant.onZigbeeEvent()]()
 
-#### Step 13.10 Add event listener `eventBus.abcd()`
-- Event: `abcd`
-- Callback function: [HomeAssistant.abcd()]()
+#### Step 13.10 Add event listener `eventBus.onDeviceMessage()`
+- Event: `deviceMessage`
+- Callback function: [HomeAssistant.onZigbeeEvent()]()
 
-#### Step 13.11 Add event listener `eventBus.abcd()`
-- Event: `abcd`
-- Callback function: [HomeAssistant.abcd()]()
+#### Step 13.11 Add event listener `eventBus.onEntityOptionsChanged()`
+- Event: `entityOptionsChanged`
+- Callback function: [HomeAssistant.discover()]()
 
-#### Step 13.12 Add event listener `eventBus.abcd()`
-- Event: `abcd`
-- Callback function: [HomeAssistant.abcd()]()
+#### Step 13.12 Subscribe to topics
+- Subscribe topic: `hass/status`
+- Subscribe topic: `homeassistant/status`
+- Subscribe topic: `homeassistant/#`
+
+#### Step 13.13 MQTT discovery of all paired devices on startup
+- Run [HomeAssistant.discover()]() for all `devices` and `groups`
+
+#### Step 13.14 Emit event `eventBus.emitPublishAvailability()`
+- Event: `publishAvailability`
