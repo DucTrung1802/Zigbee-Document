@@ -198,10 +198,39 @@ Method [ExternalExtension.publishExtensions()]()
 #### Path
 > zigbee2mqtt\lib\extension\availability.ts
 
+#### 11.1 Add event listener `eventBus.onEntityRenamed()`
+- Event: `deviceRenamed`
+- Callback function: 
+  - If availability is enabled for entity:
+    - ``mqtt.publish(`${data.from}/availability`, ...)``
+    - Run [Availability.publishAvailability()]()
 
+#### 11.2 Add event listener `eventBus.onDeviceRemoved()`
+- Event: `deviceRemoved`
+- Callback function: Clear timeout of device - [clearTimeout(this.timers[data.ieeeAddr])]()
 
+#### 11.3 Add event listener `eventBus.onDeviceLeave()`
+- Event: `deviceLeave`
+- Callback function: Clear timeout of device - [clearTimeout(this.timers[data.ieeeAddr])]()
 
+#### 11.4 Add event listener `eventBus.onDeviceAnnounce()`
+- Event: `deviceLeave`
+- Callback function: Retrieve state of device - [Availability.retrieveState(data.device)]()
 
+#### 11.5 Add event listener `eventBus.onLastSeenChanged()`
+- Event: `lastSeenChanged`
+- Callback function: Retrieve state of device - [Availability.onLastSeenChanged]()
+
+#### 11.6 Add event listener `eventBus.onPublishAvailability()`
+- Event: `publishAvailability`
+- Callback function: Publish availability for all entities - [Availability.publishAvailabilityForAllEntities]()
+
+#### 11.7 Add event listener `eventBus.onGroupMembersChanged()`
+- Event: `publishAvailability`
+- Callback function: Publish availability for all entities - [Availability.publishAvailability(data.group, ...)]()
+
+#### 11.8 Publish availability for all entities 
+- [Availability.publishAvailabilityForAllEntities]()
 
 ### Step 12: Frontend.start()
 
