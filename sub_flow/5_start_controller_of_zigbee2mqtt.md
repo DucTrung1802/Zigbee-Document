@@ -40,7 +40,9 @@ Method [devices()]()
 
 ### Step 8: [Start all extensions](5_8_start_all_extensions.md)
 
-### Step 9: Send all cached states
+### Step 9: [Send all cached states](5_9_send_all_cached_states.md)
 
-### Step 10: Add event listener for eventBus, listening event "lastSeenChanged"
+### Step 10: Add event listener `eventBus.onLastSeenChanged()`
+- Event: `lastSeenChanged`
+- Callback function: [utils.publishLastSeen()]()
 

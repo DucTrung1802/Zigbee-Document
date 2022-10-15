@@ -1,4 +1,4 @@
-text = "Bridge.Publish()"
+text = "Send all cached states"
 
 
 def toName(text):
