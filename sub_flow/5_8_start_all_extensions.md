@@ -234,8 +234,77 @@ Method [ExternalExtension.publishExtensions()]()
 
 ### Step 12: Frontend.start()
 
+#### Path
+> zigbee2mqtt\lib\extension\frontend.ts
+
+#### 12.1 Create http server 
+- Run [http.createServer()]()
+
+#### 12.2 Add event listener `server.on()`
+- Event: `upgrade`
+- Callback function: [Frontend.onUpgrade]()
+
+#### 12.3 Initialize `fileServer`
+- Assign `fileServer = ` [gzipStatic(...)]()
+
+#### 12.4 Initialize `WebSocket`
+
+Class [WebSocket]() 
+
+#### 12.5 Add event listener `wss.on()`
+- Event: `connection`
+- Callback function: [Frontend.onWebSocketConnection()]()
+
+#### 12.6 Start a server listening for connections
+
 ### Step 13: HomeAssistant.start()
 
+#### Path
+> zigbee2mqtt\lib\extension\homeassistant.ts
 
+#### Step 13.1 Get zigbee2mqtt version
+- Current version: `16.17.0`
 
+#### Step 13.2 Add event listener `eventBus.onDeviceRemoved()`
+- Event: `deviceRemoved`
+- Callback function: [HomeAssistant.onDeviceRemoved()]()
 
+#### Step 13.3 Add event listener `eventBus.onMQTTMessage()`
+- Event: `mqttMessage`
+- Callback function: [HomeAssistant.onMQTTMessage()]()
+
+#### Step 13.4 Add event listener `eventBus.onEntityRenamed()`
+- Event: `deviceRenamed`
+- Callback function: [HomeAssistant.onEntityRenamed()]()
+
+#### Step 13.5 Add event listener `eventBus.onPublishEntityState()`
+- Event: `publishEntityState`
+- Callback function: [HomeAssistant.onPublishEntityState()]()
+
+#### Step 13.6 Add event listener `eventBus.onGroupMembersChanged()`
+- Event: `groupMembersChanged`
+- Callback function: [HomeAssistant.onGroupMembersChanged()]()
+
+#### Step 13.7 Add event listener `eventBus.onDeviceAnnounce()`
+- Event: `deviceAnnounce`
+- Callback function: [HomeAssistant.onZigbeeEvent()]()
+
+#### Step 13.8 Add event listener `eventBus.onDeviceJoined()`
+- Event: `deviceJoined`
+- Callback function: [HomeAssistant.onZigbeeEvent()]()
+
+#### Step 13.9 Add event listener `eventBus.onDeviceInterview()`
+- Event: `deviceInterview`
+- Callback function: [HomeAssistant.onZigbeeEvent()]()
+
+#### Step 13.10 Add event listener `eventBus.abcd()`
+- Event: `abcd`
+- Callback function: [HomeAssistant.abcd()]()
+
+#### Step 13.11 Add event listener `eventBus.abcd()`
+- Event: `abcd`
+- Callback function: [HomeAssistant.abcd()]()
+
+#### Step 13.12 Add event listener `eventBus.abcd()`
+- Event: `abcd`
+- Callback function: [HomeAssistant.abcd()]()
