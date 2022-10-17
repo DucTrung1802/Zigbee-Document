@@ -27,22 +27,6 @@
 
 ## Methods in detail
 ---
-## abcd()
-- Input: `null`
-
-- Output: `null`
-
-### Flow
-
-### Step 1:
-
-### Step 2:
-
-### Step 3:
-
-### Step 4:
-
----
 
 ## abcd()
 - Input: `null`
@@ -60,3 +44,5 @@
 ### Step 4:
 
 ---
+
+
