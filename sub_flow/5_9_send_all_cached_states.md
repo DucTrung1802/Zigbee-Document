@@ -48,15 +48,18 @@ The Quality of Service (QoS) level is an agreement between the sender of a messa
 - `dateCode`
 - `softwareBuildID`
 
-### Step 6: SAMPLE
+### Step 6: Add last seen to message
+- String with full date information
 
-### Step 7: SAMPLE
+### Step 7: Add device link quality (LQI) to message
 
-### Step 8: SAMPLE
+### Step 8: Filter mqtt message attributes
 
-### Step 9: SAMPLE
+### Step 9: Publish message
+- Publish string `message` via method [mqtt.publish()]()
 
-### Step 10: SAMPLE
+### Step 10: Iterate payload attribute output
+- Run [Controller.iteratePayloadAttributeOutput()]()
 
-### Step 11: SAMPLE
-
+### Step 11: Emit event `eventBus.emitPublishEntityState()`
+- Event: `publishEntityState`
