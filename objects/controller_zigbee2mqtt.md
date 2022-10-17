@@ -146,6 +146,8 @@ Function [exit()]() in
 
 ### Flow
 
+[Flow of publishEntityState()](../sub_flow/5_9_send_all_cached_states.md)
+
 ---
 
 ## iteratePayloadAttributeOutput()
@@ -155,6 +157,12 @@ Function [exit()]() in
 
 ### Flow
 
+### Step 1:
+- Use regression to analysis sub payload.
+
+### Step 2:
+- Publish message: [mqtt.publish()]()
+
 ---
 
 ## callExtensions()
@@ -163,7 +171,6 @@ Function [exit()]() in
 - Output: `Promise<void>`
 
 ### Flow
-
-
-
-
+- Call method for extensions. Could be:
+  - [Extension.start()]()
+  - [Extension.stop()]()
