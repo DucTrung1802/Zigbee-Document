@@ -18,16 +18,16 @@
 
 
 ## Methods
-- [constructor()]()
-- [start()]()
-- [enableDisableExtension()]()
-- [addExtension()]()
-- [stop()]()
-- [exit()]()
-- [onZigbeeAdapterDisconnected()]()
-- [publishEntityState()]()
-- [iteratePayloadAttributeOutput()]()
-- [callExtensions()]()
+- [constructor()](#constructor)
+- [start()](#start)
+- [enableDisableExtension()](#enabledisableextension)
+- [addExtension()](#addextension)
+- [stop()](#stop)
+- [exit()](#exit)
+- [onZigbeeAdapterDisconnected()](#onzigbeeadapterdisconnected)
+- [publishEntityState()](#publishentitystate)
+- [iteratePayloadAttributeOutput()](#iteratepayloadattributeoutput)
+- [callExtensions()](#callextensions)
 
 ## Methods in detail
 ---
