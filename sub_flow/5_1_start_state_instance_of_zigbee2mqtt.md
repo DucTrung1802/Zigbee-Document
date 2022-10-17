@@ -48,3 +48,5 @@ Example:
 ### Step 3: Set event listener for eventBus, listen to event "deviceLeave"
 - Event: `deviceLeave`
 - Callback function: Delete the state of the leaving device from database in file `zigbee2mqtt\lib\state.ts`
+
+## External flow: [Start Controller of zigbee2mqtt - Step 1](5_start_controller_of_zigbee2mqtt.md)

@@ -44,3 +44,5 @@ Method [start()]()
 
 ### Step 8: Wait a bit for adapter to startup, otherwise led doesn't disable
 - Only zStack3x0 with 20210430 and greater support LED.
+
+## External flow: [Start Controller of zigbee-herdsman - Step 3](5_3_4_start_controller_of_zigbee-herdsman.md#step-3-start-adapter-zstackadapter)

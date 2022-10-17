@@ -1,6 +1,6 @@
 # Start Controller of zigbee-herdsman 
 
-## External flow: [Start Zigbee instance of zigbee2mqtt - Step 4](...)
+## External flow: [Start Zigbee instance of zigbee2mqtt - Step 4](5_3_start_zigbee_instance_of_zigbee2mqtt.md#step-4-start-controller-of-zigbee-herdsman)
 
 ### Description
 - This is the flow of `start()` method of Controller of `zigbee-herdsman`.
@@ -79,3 +79,5 @@ Method [onDeviceJoinedGreenPower()]()
 ### Step 12: Declare instance Touchlink
 
 Class [Touchlink]()
+
+## External flow: [Start Zigbee instance of zigbee2mqtt - Step 4](5_3_start_zigbee_instance_of_zigbee2mqtt.md#step-4-start-controller-of-zigbee-herdsman)

@@ -315,3 +315,5 @@ Class [WebSocket]()
 
 #### Step 13.14 Emit event `eventBus.emitPublishAvailability()`
 - Event: `publishAvailability`
+
+## External flow: [Start Controller of zigbee2mqtt - Step 8](5_start_controller_of_zigbee2mqtt.md#step-8-start-all-extensions)

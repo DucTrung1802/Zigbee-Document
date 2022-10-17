@@ -30,4 +30,4 @@ There are 4 types of adapters:
 
 Class [ZStackAdapter](...)
 
-
+## External flow: [Start Controller of zigbee-herdsman - Step 2](5_3_4_start_controller_of_zigbee-herdsman.md#step-2-create-and-inject-adapter)

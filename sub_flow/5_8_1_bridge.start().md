@@ -151,3 +151,5 @@ Method [publishGroups()]()
 ### Step 9: Add event listener for eventBus, listen to event "mqttMessage"
 - Event: `mqttMessage`
 - Callback function: [onMQTTMessage()]()
+
+## External flow: [Start all extensions - Step 1](5_8_start_all_extensions.md#step-1-bridgestart)

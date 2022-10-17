@@ -72,3 +72,4 @@ Setting path: `zigbee2mqtt\lib\types\types.d.ts`
 - Callback function: [onMessage()]()
   - Since we subscribe to zigbee2mqtt/# we also receive the message we send ourselves, skip these.
   
+## External flow: [Start Controller of zigbee2mqtt - Step 7](5_start_controller_of_zigbee2mqtt.md#step-7-try-connect-mqtt)

@@ -46,3 +46,4 @@ Method [devices()]()
 - Event: `lastSeenChanged`
 - Callback function: [utils.publishLastSeen()]()
 
+## External flow: [Zigbee Document - Step 5](../README.md#step-5-start-controller-of-zigbee2mqtt)

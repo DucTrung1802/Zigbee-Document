@@ -36,3 +36,4 @@ Initialize parameters:
 
 Class [Waitress]()
 
+## External flow: [Declare an instance of Adapter (type: ZStackAdapter) - Step 1](5_3_4_2_3_declare_an_instance_of_adapter_(type_zstackadapter).md)

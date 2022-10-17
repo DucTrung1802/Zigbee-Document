@@ -103,5 +103,4 @@ Class [Controller (zigbee-herdsman)]()
 
 - Current `transmitPower`: `20 dbm`
 
-
-
+## External flow: [Start Controller of zigbee2mqtt - Step 3](5_start_controller_of_zigbee2mqtt.md#step-3-start-zigbee-instance-of-zigbee2mqtt)

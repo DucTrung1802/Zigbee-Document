@@ -63,3 +63,6 @@ The Quality of Service (QoS) level is an agreement between the sender of a messa
 
 ### Step 11: Emit event `eventBus.emitPublishEntityState()`
 - Event: `publishEntityState`
+
+## External flow: [Start Controller of zigbee2mqtt - Step 9](5_start_controller_of_zigbee2mqtt.md#step-9-send-all-cached-states)
+

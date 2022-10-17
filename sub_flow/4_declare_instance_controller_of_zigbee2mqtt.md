@@ -16,8 +16,6 @@
 
 ### Step 1: Declare instance EventBus of zigbee2mqtt
 
-#### Class [EventBus]()
-
 #### Description
 - This object has a property as `events.EventEmitter` that will 
   - Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given event or that is rejected if the `EventEmitter` emits `'error'` while waiting. 
@@ -31,14 +29,20 @@
 - Log error
 - Log debug
 
+#### Class [EventBus]()
+
 ### Step 2: Declare instance Zigbee of zigbee2mqtt
-- Initialize `eventBus` for Zigbee instance
+
+#### Class [Zigbee]()
+
 
 ### Step 3: Declare instance MQTT of zigbee2mqtt
-- Initialize `eventBus` for MQTT instance
+
+#### Class [MQTT]()
 
 ### Step 4: Declare instance State of zigbee2mqtt
-- Initialize `eventBus` for State instance
+
+#### Class [State]()
 
 ### Step 5: Initialize extension arguments
 Arguments includes:
@@ -70,3 +74,5 @@ Arguments includes:
 - ExtensionExternalConverters
 - ExtensionHomeAssistant
 - ExtensionSoftReset
+
+## External flow: [Zigbee Document - Step 4](../README.md#step-4-declare-instance-controller-of-zigbee2mqtt)

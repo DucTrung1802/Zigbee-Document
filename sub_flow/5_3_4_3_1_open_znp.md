@@ -44,3 +44,5 @@ Method [onUnpiParsed()]()
     - Callback function: write debug log.
 
 Method [onPortClose()]()
+
+## External flow: [Start Adapter (ZStackAdapter) - Step 1](5_3_4_3_start_adapter_(zstackadapter).md#step-1-open-znp)

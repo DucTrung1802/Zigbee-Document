@@ -47,3 +47,5 @@ Method [onZnpRecieved]()
   
 Class [ZStackAdapter]()
 Method [onZnpClose]()
+
+## External flow: [Create and inject Adapter - Step 3](5_3_4_2_create_and_inject_adapter.md#step-3-initialize-an-instance-of-adapter-type-zstackadapter)
