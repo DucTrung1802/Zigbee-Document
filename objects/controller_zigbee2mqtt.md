@@ -77,12 +77,37 @@
 
 - Output: `Promise<void>`
 
+### Flow
+
+### Step 1:
+- Push extension into working extensions list.
+
+### Step 2:
+- Run `callExtensions('start', ...)` to start desired extension.
+
 ---
 
 ## stop()
 - Input: `null`
 
 - Output: `Promise<void>`
+
+### Flow
+
+### Step 1:
+- Run `callExtensions('stop', ...)` to stop desired extension.
+
+### Step 2:
+- Remove all listeners of `Controller`.
+
+### Step 3:
+- Stop State: [state.stop()]()
+
+### Step 4:
+- Disconnect MQTT: [mqtt.disconnect()]()
+
+### Step 5:
+- Stop Zigbee: [zigbee.stop()]()
 
 ---
 
@@ -91,12 +116,26 @@
 
 - Output: `Promise<void>`
 
+### Flow
+
+### Step 1:
+- Finish logger: [logger.end()]()
+
+### Step 2:
+- Run exit callback function: `exitCallback`. See the following function.
+
+Function [exit()]() in
+> zigbee2mqtt\index.js
+
 ---
 
 ## onZigbeeAdapterDisconnected()
 - Input: `null`
 
 - Output: `Promise<void>`
+
+### Flow
+- Run [Controller.stop()](controller_zigbee2mqtt.md#stop)
 
 ---
 
@@ -105,6 +144,8 @@
 
 - Output: `Promise<void>`
 
+### Flow
+
 ---
 
 ## iteratePayloadAttributeOutput()
@@ -112,12 +153,16 @@
 
 - Output: `Promise<void>`
 
+### Flow
+
 ---
 
 ## callExtensions()
 - Input: `method: 'start' | 'stop', extensions: Extension[]`
 
 - Output: `Promise<void>`
+
+### Flow
 
 
 
