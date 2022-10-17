@@ -47,12 +47,28 @@
 
 - Output: `Promise<void>`
 
+### Flow
+
+[Flow of start()](../sub_flow/5_start_controller_of_zigbee2mqtt.md)
+
 ---
 
 ## enableDisableExtension()
 - Input: `enable: boolean, name: string`
 
 - Output: `Promise<void>`
+
+### Flow
+
+### Step 1: 
+- If `enable` is set to `False`:
+  - Run `callExtensions('stop', ...)` to stop desired extension.
+  - Pop extension from working extensions list.
+
+### Step 2:
+- If `enable` is set to `True`:
+  - Push extension into working extensions list.
+  - Run `callExtensions('start', ...)` to start desired extension.
 
 ---
 
