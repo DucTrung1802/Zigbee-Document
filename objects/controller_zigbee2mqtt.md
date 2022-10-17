@@ -1,80 +1,107 @@
 # Controller (zigbee2mqtt)
 
-## Description
-
 ## Path
 > zigbee2mqtt\lib\controller.ts
 
+## Description
+- abcd
+
 ## Properties
-- private eventBus: EventBus
-- private zigbee: Zigbee;
-- private state: State;
-- private mqtt: MQTT;
+- private eventBus: [EventBus]()
+- private zigbee: [Zigbee]();
+- private state: [State]();
+- private mqtt: [MQTT]();
 - private restartCallback: () => void;
 - private exitCallback: (code: number) => void;
-- private extensions: Extension[];
+- private extensions: [Extension]()[ ];
 - private extensionArgs: ExtensionArgs;
 
 
 ## Methods
-- constructor()
-- start()
-- enableDisableExtension()
-- addExtension()
-- exit()
-- onZigbeeAdapterDisconnected()
-- publishEntityState()
-- iteratePayloadAttributeOutput()
-- callExtensions()
+- [constructor()]()
+- [start()]()
+- [enableDisableExtension()]()
+- [addExtension()]()
+- [stop()]()
+- [exit()]()
+- [onZigbeeAdapterDisconnected()]()
+- [publishEntityState()]()
+- [iteratePayloadAttributeOutput()]()
+- [callExtensions()]()
 
-## Detail
+## Methods in detail
 ---
-### constructor()
+## constructor()
 - Input: `restartCallback: () => void, exitCallback: (code: number) => void`
 
 - Output: `null`
 
 ### Flow
 
-![abcd]()
-
-#### Step 1: 
+[Flow of constructor()](../sub_flow/4_declare_instance_controller_of_zigbee2mqtt.md)
 
 ---
 
-### start()
-```async start(): Promise<void>```
+## start()
+- Input: `null`
 
-### enableDisableExtension()
-```@bind async enableDisableExtension(enable: boolean, name: string): Promise<void>```
+- Output: `Promise<void>`
 
-### addExtension()
-```@bind async addExtension(extension: Extension): Promise<void>```
+---
 
-### stop()
-```async stop(): Promise<void>```
+## enableDisableExtension()
+- Input: `enable: boolean, name: string`
 
-### exit()
-```async exit(code: number): Promise<void>```
+- Output: `Promise<void>`
 
-### onZigbeeAdapterDisconnected()
-```@bind async onZigbeeAdapterDisconnected(): Promise<void>```
+---
 
-### publishEntityState()
-```@bind async publishEntityState(entity: Group | Device, payload: KeyValue, stateChangeReason?: StateChangeReason): Promise<void>```
+## addExtension()
+- Input: `enable: boolean, name: string`
 
-### iteratePayloadAttributeOutput()
-```async iteratePayloadAttributeOutput(topicRoot: string, payload: KeyValue, options: MQTTOptions): Promise<void>```
+- Output: `Promise<void>`
 
-### callExtensions()
-```private async callExtensions(method: 'start' | 'stop', extensions: Extension[]): Promise<void>```
+---
 
+## stop()
+- Input: `null`
 
+- Output: `Promise<void>`
 
+---
 
+## exit()
+- Input: `code: number`
 
-#### sample()
-```abc```
+- Output: `Promise<void>`
+
+---
+
+## onZigbeeAdapterDisconnected()
+- Input: `null`
+
+- Output: `Promise<void>`
+
+---
+
+## publishEntityState()
+- Input: `entity: Group | Device, payload: KeyValue, stateChangeReason?: StateChangeReason`
+
+- Output: `Promise<void>`
+
+---
+
+## iteratePayloadAttributeOutput()
+- Input: `topicRoot: string, payload: KeyValue, options: MQTTOptions`
+
+- Output: `Promise<void>`
+
+---
+
+## callExtensions()
+- Input: `method: 'start' | 'stop', extensions: Extension[]`
+
+- Output: `Promise<void>`
 
 
 
