@@ -41,6 +41,9 @@ def main():
             f.write("git branch updated-{}\n".format(new_general_version))
             f.write("git push origin -u updated-{}\n".format(new_general_version))
             f.write("git checkout updated-{}\n".format(new_general_version))
+            f.write("git remote add koenkk {}\n".format(ZIGBEE_REPO[repo]["link"]))
+            f.write("git fetch\n")
+            f.write("git rebase {}\n".format(ZIGBEE_REPO[repo]["version"]))
 
             f.write("\n\n\n\n")
 
